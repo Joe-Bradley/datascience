@@ -1117,7 +1117,7 @@ if True:
 if True:
     df_concat.to_csv('table-stock.csv',columns=df_concat.columns,index=True)
 
-    df_csvload = pd.read_csv('table-stock.csv',parse_dates=True,index_col=0,encoding='gb2312')
+    df_csvload = pd.read_csv('table-stock.csv', parse_dates=True, index_col=0, encoding='gb2312')
     print(f'加载csv数据：\n {df_csvload.head()}')#打印前5行数据
     """
     加载csv数据：

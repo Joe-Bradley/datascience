@@ -42,7 +42,7 @@ def get_trade_signal(stock_dat):
     df_csvload_trade = pd.read_csv('GLDQ000651.csv', index_col=None, parse_dates=[2, 3], encoding='gb2312')
     # print(df_csvload_trade)
     """
-            Code  Name    Buy-Time  Sell-Time   Number  Buy-Price Sell-Price
+            代码学习  Name    Buy-Time  Sell-Time   Number  Buy-Price Sell-Price
     0  000651.SZ  格力电器  20180601   20180613    1000     46.71     49.28
     1  000651.SZ  格力电器  20180706   20180801    1000     43.19     42.45
     2  000651.SZ  格力电器  20180912   20181008    1000     35.64     37.33
