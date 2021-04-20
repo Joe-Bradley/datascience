@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def read_csv(i):
-    df1 = pd.read_csv(i, encoding="gb18030")
+    df1 = pd.read_csv(i, encoding="utf-8")
     return df1
 
 
