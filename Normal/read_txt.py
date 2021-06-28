@@ -11,9 +11,8 @@ def read_txt(file_name):
 
 if __name__ == '__main__':
     lines = read_txt("list.txt")
-    aa = 2
     for i in lines:
+        aa = i[5:7]
         a = """<DT><A HREF="{}/" ADD_DATE="1518413448">List{}</A> """.format(i[8:-1],aa)
-        aa = aa + 1
         print(a)
 
