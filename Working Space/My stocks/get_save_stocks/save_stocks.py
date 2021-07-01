@@ -20,7 +20,7 @@ def list_to_json():
                          '贵州茅台': '600519.SH',
                          '浙大网新': '600797.SH'}}]
     json_str = json.dumps(stock_index)
-    with open("stock_pool.json", "w", encoding='utf-8') as f:
+    with open("to_database/stock_pool.json", "w", encoding='utf-8') as f:
         json.dump(stock_index, f, ensure_ascii=False, indent=4)
 
 
@@ -46,7 +46,5 @@ def tushare_to_json():
                  '上证180': 'sh.000010'}
     # stock_index = [('指数', index), ('股票', stock)] 也可
     stock_index = dict([('指数', index), ('股票', stock)])
-    with open("stock_pool.json", "w", encoding='utf-8') as f:
+    with open("to_database/stock_pool.json", "w", encoding='utf-8') as f:
         json.dump(stock_index, f, ensure_ascii=False, indent=4)
-
-tushare_to_json()
